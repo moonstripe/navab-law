@@ -19,15 +19,15 @@ export default () => {
                     Specialities
                 </h1>
                 <button onClick={handleClick} id="0" class={tw`col-start-1 col-end-2 row-start-2 row-end-3 outline-none focus:outline-none`}>
-                    <h4 id="0" class={tw`text-white w-max text-thin text-xl mx-auto`}>Civil Rights</h4>
+                    <h4 id="0" class={tw`text-white w-max text-xl mx-auto`}>Civil Rights</h4>
                     <img id="0" src="/svg/civ_rights.svg" class={tw`z-40 w-[10vw] h-[10vw] mx-auto`} />
                 </button>
                 <button onClick={handleClick} id="1" class={tw`col-start-2 col-end-3 row-start-2 row-end-3 outline-none focus:outline-none`}>
-                    <h4 id="1" class={tw`text-white w-max text-thin text-xl mx-auto`}>Personal Injury</h4>
+                    <h4 id="1" class={tw`text-white w-max text-xl mx-auto`}>Personal Injury</h4>
                     <img id="1" src="/svg/personal_inj.svg" class={tw`z-40 w-[10vw] h-[10vw] mx-auto`} />
                 </button>
                 <button onClick={handleClick} id="2" class={tw`col-start-3 col-end-4 row-start-2 row-end-3 outline-none focus:outline-none`}>
-                    <h4 id="2" class={tw`text-white w-max font-thin text-xl mx-auto`}>Employment</h4>
+                    <h4 id="2" class={tw`text-white w-max text-xl mx-auto`}>Employment</h4>
                     <img id="2" src="/svg/employ.svg" class={tw`z-40 w-[10vw] h-[10vw] color-blue-light mx-auto`} />
                 </button>
 
