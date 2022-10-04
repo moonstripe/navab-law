@@ -11,8 +11,7 @@ export default () => {
                     About Navab Law, APC
                 </h1>
                 <p class={tw`col-span-5 my-auto row-start-2 row-end-3`}>
-                    We advocate for victims of civil rights violations, workplace discrimination, and personal injury. Since its founding in 2016, Navab Law has striven to hold police officers, corporations and institutions accountable for harm they cause. Our passion for and expertise in civil rights have led our cases to the Ninth Circuit of Appeals and many successful verdicts.
-                </p>
+                    We advocate for victims of civil rights violations, workplace discrimination, and negligence. Since its founding in 2015, Navab Law has striven to hold police officers, corporations and government entities accountable for harm they cause. Our passion for and expertise in civil rights and personal injury have led to many successful verdicts and millions of dollars in compensation to deserving clients.                </p>
 
             </div>
 

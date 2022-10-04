@@ -24,7 +24,7 @@ export default function Home() {
      <Nav/>
 
       {/* Main content */}
-      <section id="content">
+      <main id="content">
         {/* Hero image and text */}
         <Hero/>
 
@@ -39,7 +39,7 @@ export default function Home() {
 
         {/* Contact */}
 
-      </section>
+      </main>
       {/* Footer */}
 
       {/* Todo Implement Footer (contact) */}

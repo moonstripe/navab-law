@@ -37,10 +37,10 @@ export default () => {
                         content === 0 ? (
                             <Fragment>
                                 <h1 class={tw`text-2xl my-4 tracking-wide text-bold`}>
-                                    At Navab Law, we take pride in our efforts to defend individual rights and liberties.
+                                    At Navab Law, we take pride in our efforts to defend individual rights and liberties. The Fourth Amendment of the Constitution protects individuals from “unreasonable searches and seizures,” which means government officials cannot arbitrarily or unreasonably search you or your belongings, nor falsely arrest you, nor use excessive force against you.
                                 </h1>
                                 <p class={tw`font-light`}>
-                                    Navab Law is committed to achieving justice for families affected by civil rights violations, neglect, violence and death, particularly as a result of police brutality. Our firm acknowledges the disproportionately higher rates of civil rights’ violations in communities of color, and we are determined to help individuals affected by systemic racism.
+                                    Navab Law is committed to achieving justice for families and individuals affected by civil rights violations, negligence of police officers, violence and death, particularly as a result of police brutality. In pursuing litigation, we have a proven track record, and we challenge a broad range of unjust policies, like qualified immunity, ultimately striving for policy change that protects the rights of all people. If you believe you are a victim of civil rights violations, you may be entitled to compensation for your harm.
                                 </p>
                             </Fragment>
                         ) : null
@@ -51,10 +51,10 @@ export default () => {
                         content === 1 ? (
                             <Fragment>
                                 <h1 class={tw`text-2xl my-4 tracking-wide text-bold`}>
-                                    Navab Law strives to protect the rights of those who are injured due to the carelessness of others.
+                                    When a person is seriously injured due to the negligence and carelessness of others, it can drastically change and devastate many lives. Through tireless and meticulous litigation, we aim to restore some dignity and stability to all those affected.
                                 </h1>
                                 <p class={tw`font-light`}>
-                                    Serious injury or death can change many lives, and through successful litigation, we hope to restore some dignity and stability to those affected. Our firm handles a myriad of personal injury issues, from medical malpractice to wrongful death.
+                                    Our firm has the experience to successfully litigate claims for victims of negligence. We have handled a myriad of personal injury issues, including automobile accidents, catastrophic injury, premises liability and wrongful death. If you believe you are a victim of serious injury due to negligence, you may be entitled to compensation for your harm.
                                 </p>
                             </Fragment>
                         ) : null
@@ -64,11 +64,10 @@ export default () => {
                         content === 2 ? (
                             <Fragment>
                                 <h1 class={tw`text-2xl my-4 tracking-wide text-bold`}>
-                                    Everyone deserves to feel safe at work, regardless of sex, race, gender expression, or any other identity marker.
+                                    Everyone deserves to feel safe at work, regardless of sex, race, age, religion, or gender expression. If you have been the victim of workplace discrimination, this can cause serious stress and harm in your life.
                                 </h1>
                                 <p class={tw`font-light`}>
-                                    Navab Law recognizes that workplace discrimination is a pervasive issue, and we are determined to protect workers at all costs. We assist clients in dealing with a wide range of employment law issues, including discrimination, harassment, wrongful discharge, retaliation, and unfair labor practices.
-                                </p>
+                                    Navab Law acknowledges the pernicious effects of workplace discrimination, and we are determined to protect workers at all costs. We assist clients in dealing with a wide range of employment law issues, including discrimination, harassment, wrongful discharge, retaliation, and unfair labor practices. If you believe you are a victim of workplace discrimination, you may be entitled to compensation for your harm.                                </p>
                             </Fragment>
                         ) : null
                     }

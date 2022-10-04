@@ -31,16 +31,16 @@ export default () => {
                     src="/img/linkedinpic.jpeg"
                     alt="A headshot of Kaveh Navab, APC" />
                 <p class={tw`text-right col-start-3 col-end-5 row-start-3 row-end-4 mt-0 font-semibold text-4xl text-white`}>
-                At Navab Law,
+                    At Navab Law,
                 </p>
                 <p class={tw`mb-2 mt-auto text-left col-start-4 col-end-6 row-start-3 row-end-4 text-2xl font-bold text-white`}>
-                we will do what it takes.
+                    we will do what it takes.
                 </p>
-                <p class={tw`mt-0 text-left col-start-3 col-end-6 row-start-4 row-end-5 my-auto mx-auto w-2/3 text-md font-light text-white`}>
-                Kaveh Navab founded Navab Law, APC in 2016 with the goal of bringing justice to individuals affected by discrimination, civil rights violations, and personal injury.
+                <p class={tw`mt-0 text-left col-start-3 col-end-6 row-start-4 row-end-5 mb-auto mx-auto w-2/3 text-md font-light text-white`}>
+                    Kaveh Navab founded Navab Law, APC with the goal of bringing justice to individuals affected by discrimination, civil rights violations, and injury from negligence.
                 </p>
-                <div class={tw`row-start-5 row-end-6 col-start-3 col-end-6 flex flex-col`}>
-                    <div class={tw`flex flex-row my-auto`}>
+                <div class={tw`row-start-5 row-end-6 col-start-3 col-end-6 flex flex-col pt-4`}>
+                    <div class={tw`flex flex-row mb-auto mt-auto`}>
                         <button onClick={handleAbout} class={tw`text-white border-2 border-white ml-auto mr-2 my-auto px-4 py-2 rounded-lg group-hover:animate-down animate-none flex`}>
                             <p class={tw`m-auto pr-0.5 align-middle`}>Learn More</p>
                             <img
@@ -52,10 +52,10 @@ export default () => {
 
                         <button class={tw`text-blue-medium bg-white mr-auto ml-2 my-auto px-4 py-2 rounded-lg flex`}>
                             <p class={tw`m-auto pr-0.5 align-middle`}>Contact Now</p>
-                            <img class={tw`m-auto pl-0.5 align-middle`} 
-                            src="/svg/phone.svg" 
-                            width="24" 
-                            alt="two down-facing chevrons" />
+                            <img class={tw`m-auto pl-0.5 align-middle`}
+                                src="/svg/phone.svg"
+                                width="24"
+                                alt="two down-facing chevrons" />
                         </button>
                     </div>
                 </div>

@@ -35,3 +35,46 @@ Everyone deserves to feel safe at work, regardless of sex, race, gender expressi
 
  affected by institutional neglect, and inspiring policy change to prevent such neglect. 
 
+
+
+10/4
+
+Right below navigation bar:
+
+Kaveh Navab founded Navab Law, APC with the goal of bringing justice to individuals affected by discrimination, civil rights violations, and injury from negligence.
+
+ 
+
+ABOUT NAVAB LAW, APC
+
+We advocate for victims of civil rights violations, workplace discrimination, and negligence. Since its founding in 2015, Navab Law has striven to hold police officers, corporations and government entities accountable for harm they cause. Our passion for and expertise in civil rights and personal injury have led to many successful verdicts and millions of dollars in compensation to deserving clients.
+
+ 
+
+CIVIL RIGHTS
+
+At Navab Law, we take pride in our efforts to defend individual rights and liberties. The Fourth Amendment of the Constitution protects individuals from “unreasonable searches and seizures,” which means government officials cannot arbitrarily or unreasonably search you or your belongings, nor falsely arrest you, nor use excessive force against you.  
+
+ 
+
+Navab Law is committed to achieving justice for families and individuals affected by civil rights violations, negligence of police officers, violence and death, particularly as a result of police brutality. In pursuing litigation, we have a proven track record, and we challenge a broad range of unjust policies, like qualified immunity, ultimately striving for policy change that protects the rights of all people. If you believe you are a victim of civil rights violations, you may be entitled to compensation for your harm.
+
+ 
+
+PERSONAL INJURY
+
+When a person is seriously injured due to the negligence and carelessness of others, it can drastically change and devastate many lives. Through tireless and meticulous litigation, we aim to restore some dignity and stability to all those affected. 
+
+ 
+
+Our firm has the experience to successfully litigate claims for victims of negligence. We have handled a myriad of personal injury issues, including automobile accidents, catastrophic injury, premises liability and wrongful death. If you believe you are a victim of serious injury due to negligence, you may be entitled to compensation for your harm.
+
+ 
+
+EMPLOYMENT
+
+Everyone deserves to feel safe at work, regardless of sex, race, age, religion, or gender expression. If you have been the victim of workplace discrimination, this can cause serious stress and harm in your life.
+
+ 
+
+Navab Law acknowledges the pernicious effects of workplace discrimination, and we are determined to protect workers at all costs. We assist clients in dealing with a wide range of employment law issues, including discrimination, harassment, wrongful discharge, retaliation, and unfair labor practices. If you believe you are a victim of workplace discrimination, you may be entitled to compensation for your harm.
