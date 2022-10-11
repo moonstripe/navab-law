@@ -10,7 +10,7 @@ export default () => {
             <div class={tw`absolute top-[15vh] mt-1 left-0 w-screen bg-gradient-to-b from-blue-medium via-blue-medium via-blue-medium to-blue-dark h-[100vh] lg:h-[50vh] z-0`} />
             <div class={tw`col-span-full h-[100vh] lg:h-[50vh] grid grid-cols-5 grid-rows-4 lg:grid-rows-6 lg:grid-rows-3 gap-1 z-10`}>
                 <img
-                    class={tw`mb-0 mt-4 border-8 rounded-full col-span-full row-start-1 row-end-2 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-4 w-auto justify-end`}
+                    class={tw`mb-0 mt-12 border-8 rounded-full col-span-full row-start-1 row-end-2 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-4 w-auto justify-end`}
                     src="/img/linkedinpic.jpeg"
                     alt="A headshot of Kaveh Navab, APC" />
                 <p class={tw`text-center lg:text-right col-span-full row-start-2 row-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:row-end-2 mt-auto mb-0 font-semibold text-2xl font-bold lg:text-4xl text-white`}>

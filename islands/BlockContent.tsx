@@ -47,7 +47,7 @@ export default ({ values, truncated, components }: PortableTextProps) => {
 
 
         if (child.marks.length === 0) {
-            return STYLE !== Style.NORMAL ? h(STYLE, { class: tw`inline` }, child.text) : isListItem ? h("li", { class: tw`` }, child.text) : h("p", { class: tw`inline` }, child.text)
+            return STYLE !== Style.NORMAL ? h(STYLE, { class: tw`inline` }, child.text) : isListItem ? h("li", null, child.text) : h("p", { class: tw`inline` }, child.text)
         }
         if (child.marks.length === 1) {
             switch (child.marks[0]) {
