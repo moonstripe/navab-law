@@ -42,7 +42,7 @@ export default ({ values, truncated, components }: PortableTextProps) => {
         // block level style and list
         const STYLE: Style = styleSwitch(block)
 
-        const isListItem: boolean = block?.listItem?.length > 0
+        const isListItem: boolean = block?.listItem === undefined ? false : block?.listItem.length > 0
 
 
 
