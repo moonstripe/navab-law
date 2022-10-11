@@ -100,7 +100,7 @@ export default () => {
                     <a href={'tel:+13108261002'} class={tw`text-blue-dark  my-auto mt-2 mb-auto`}>+1 (310) 826-1002</a>
 
                 </div>
-                <div class={tw`col-start-3 col-end-5 row-start-1 z-40`}>
+                <div class={tw`col-start-3 col-end-5 row-start-1 z-40 mb-20`}>
                     <h1 class={tw`mt-2 mb-2 font-ultralight text-4xl col-start-3 col-end-5 tracking-wide text-blue-dark`}>
                         By email:
                     </h1>
