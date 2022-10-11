@@ -1,17 +1,35 @@
 /** @jsx h */
 import { h } from "preact";
-import { useState, useCallback, useEffect } from "preact/hooks";
-import { tw } from "@twind";
+import { tw } from "twind";
 import Layout from "../components/Layout.tsx";
-import { Meta } from "../utils/types/index.ts";
-import ScrollSpy from "../islands/ScrollSpy.tsx";
+import { Meta, Post } from "../utils/types/index.ts";
 import Hero from "../islands/Hero.tsx";
 import Nav from "../islands/Nav.tsx";
 import About from "../islands/About.tsx";
 import Specialities from "../islands/Specialities.tsx";
 import QuickFacts from "../islands/QuickFacts.tsx";
+import Contact from "../islands/Contact.tsx";
+import { PageProps, Handlers } from "fresh/server.ts";
 
-export default function Home() {
+import { runQuery } from "../utils/sanity.ts"
+import Ticker from "../islands/Ticker.tsx";
+
+export const handler: Handlers<Post | null> = {
+  async GET(_, ctx) {
+      const raw = await runQuery(`
+      *[_type == "post"] | order(publishedAt desc) {
+        title,
+        body,
+        publishedAt,
+        "slug": slug.current
+      }
+      `);
+
+      return ctx.render(raw);
+  },
+};
+
+export default function Home({data}: PageProps) {
   const meta: Meta = {
     title: "Navab Law",
     type: "website",
@@ -21,7 +39,8 @@ export default function Home() {
   return (
     <Layout meta={meta}>
       {/* ScrollSpy and Nav */}
-     <Nav/>
+     <Nav postArr={data} hasTicker/>
+     <div class={tw`h-[15vh] mb-1`}/>
 
       {/* Main content */}
       <main id="content">
@@ -38,7 +57,8 @@ export default function Home() {
         <Specialities/>
 
         {/* Contact */}
-
+        <Contact/>
+        
       </main>
       {/* Footer */}
 

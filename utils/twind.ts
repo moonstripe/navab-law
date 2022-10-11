@@ -1,7 +1,10 @@
 import { IS_BROWSER } from "fresh/runtime.ts";
-import { Configuration, setup } from "twind";
+import { Configuration, setup, apply } from "twind";
 export * from "twind";
 export const config: Configuration = {
+  preflight: {
+    ul: apply`list-disc list-inside`
+  },
   darkMode: "class",
   theme: {
     fontFamily: {

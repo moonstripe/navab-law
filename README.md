@@ -78,3 +78,9 @@ Everyone deserves to feel safe at work, regardless of sex, race, age, religion, 
  
 
 Navab Law acknowledges the pernicious effects of workplace discrimination, and we are determined to protect workers at all costs. We assist clients in dealing with a wide range of employment law issues, including discrimination, harassment, wrongful discharge, retaliation, and unfair labor practices. If you believe you are a victim of workplace discrimination, you may be entitled to compensation for your harm.
+
+
+curl -X POST "https://api.sendgrid.com/v3/mail/send" \
+--header "Authorization: Bearer <<YOUR_API_KEY_HERE>>" \
+--header "Content-Type: application/json" \
+--data '{"personalizations": [{"to": [{"email": "john_doe@example.com", "name": "John Doe"}, {"email": "julia_doe@example.com", "name": "Julia Doe"}], "cc": [{"email": "jane_doe@example.com", "name": "Jane Doe"}], "bcc": [{"email": "james_doe@example.com", "name": "Jim Doe"}]}, {"from": {"email": "sales@example.com", "name": "Example Sales Team"}, "to": [{"email": "janice_doe@example.com", "name": "Janice Doe"}], "bcc": [{"email": "jordan_doe@example.com", "name": "Jordan Doe"}]}], "from": {"email": "orders@example.com", "name": "Example Order Confirmation"}, "reply_to": {"email": "customer_service@example.com", "name": "Example Customer Service Team"}, "subject": "Your Example Order Confirmation", "content": [{"type": "text/html", "value": "<p>Hello from Twilio SendGrid!</p><p>Sending with the email service trusted by developers and marketers for <strong>time-savings</strong>, <strong>scalability</strong>, and <strong>delivery expertise</strong>.</p><p>%open-track%</p>"}]}'

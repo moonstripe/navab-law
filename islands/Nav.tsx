@@ -1,10 +1,12 @@
 /** @jsx h */
 import { h, Fragment } from "preact";
-import { useState, useCallback, useEffect } from "preact/hooks"
+import { useState, useCallback } from "preact/hooks"
 import { tw } from "twind";
+import { NavProps } from '../utils/types/index.ts'
 import ScrollSpy from "./ScrollSpy.tsx"
+import Ticker from "./Ticker.tsx"
 
-export default () => {
+export default ({postArr, hasTicker}: NavProps) => {
     const [inView, setInView] = useState<string | undefined>()
 
     const setScrollSpy = useCallback((id: string) => {
@@ -12,29 +14,34 @@ export default () => {
     }, []);
 
     return (
-        <div>
+        <div class={tw`fixed z-50 left-0 top-0`}>
             <ScrollSpy setter={setScrollSpy} />
-            <div id="nav-scroll" class={tw`bg-gradient-to-r pb-1 from-blue-300 to-blue-600 fixed w-screen left-0 top-0 flex flex-col z-50`}>
-                <div class={tw`bg-white`}>
-                    <div class={tw`mx-auto w-6/12 py-2 flex flex-row`}>
-                        <img
-                            src="/svg/logo.svg"
-                            width="50"
-                            alt="Navab Law Icon"
-                            class={tw`border-transparent border-2 rounded-md mr-2`}
-                        />
-                        <img
-                            src="/svg/text.svg"
-                            width="200"
-                            alt="Navab Law Icon"
-                            class={tw`border-transparent border-2 rounded-md mr-auto`}
-                        />
-                        <p class={inView === "#about" ? tw`ml-auto my-auto px-6 text-blue-medium border-r-1` : tw`ml-auto my-auto px-6 border-r-1`}>About</p>
-                        <p class={inView === "#quickfacts" ? tw`my-auto px-6 text-blue-medium border-r-1` : tw`my-auto px-6 border-r-1`}>Results</p>
-                        <p class={inView === "#specialities" ? tw`my-auto px-6 text-blue-medium` : tw`my-auto px-6`}>Specialities</p>
+            <div id="nav-scroll" class={tw`bg-gradient-to-r pb-1 from-blue-300 to-blue-600 w-screen left-0 top-0 flex flex-col z-50`}>
+                <div class={tw`bg-white h-[11vh]`}>
+                    <div class={tw`mx-auto w-5/6 lg:w-6/12 py-2 flex flex-row h-full`}>
+                        <a href="/" class={tw`flex flex-row`}>
+                            <img
+                                src="/svg/logo.svg"
+                                width="50"
+                                alt="Navab Law Icon"
+                                class={tw`border-transparent border-2 rounded-lg mr-2`}
+                            />
+                            <img
+                                src="/svg/text.svg"
+                                width="200"
+                                alt="Navab Law Text"
+                                class={tw`border-transparent border-2 rounded-lg mr-auto lg:visible invisible`}
+                            />
+                        </a>
+                        <p class={inView === "#about" ? tw`ml-auto my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`ml-auto my-auto px-1 lg:px-6 border-r-1`}><a href="/#about-off">About</a></p>
+                        <p class={inView === "#quickfacts" ? tw`my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`my-auto px-1 lg:px-6 border-r-1`}><a href="/#quickfacts-off">Results</a></p>
+                        <p class={inView === "#specialities" ? tw`my-auto px-1 lg:px-6 text-blue-medium` : tw`my-auto px-1 lg:px-6`}><a href="/#specialities-off">Specialities</a></p>
                     </div>
                 </div>
             </div>
+            {
+                hasTicker ? <Ticker postArr={postArr}/> : null
+            }
         </div>
     )
 }
