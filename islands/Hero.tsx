@@ -5,23 +5,6 @@ import { tw } from "twind"
 
 export default () => {
 
-    const handleAbout = () => {
-        if (IS_BROWSER) {
-            const t: number | undefined = document.getElementById("nav-scroll")?.offsetHeight;
-
-            const dest: number | undefined = document.getElementById("about")?.offsetHeight;
-
-            console.log(t, dest)
-
-            if (typeof t === "number" && typeof dest === "number") {
-                window.scrollTo({
-                    top: dest - t,
-                    behavior: 'smooth'
-                })
-            }
-        }
-    }
-
     return (
         <div id="hero" data-scrollspy="#hero" class={tw`grid grid-cols-5 group`}>
             <div class={tw`absolute top-[15vh] mt-1 left-0 w-screen bg-gradient-to-b from-blue-medium via-blue-medium via-blue-medium to-blue-dark h-[100vh] lg:h-[50vh] z-0`} />

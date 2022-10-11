@@ -6,7 +6,7 @@ export interface Meta {
     description?: string,
     url?: string,
     image?: string,
-    customMeta?: any
+    customMeta?: string | number;
 }
 
 export interface LayoutProps {

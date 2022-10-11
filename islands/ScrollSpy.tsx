@@ -9,14 +9,14 @@ export default ({ setter }: ScrollSpyProps) => {
 
     const [scroll, setScroll] = useState<number>(0)
 
-    const isInViewPort = (entry: any, offset = 200) => {
+    const isInViewPort = (entry: IntersectionObserverEntry, offset = 200) => {
         const rect = entry.boundingClientRect;
         return rect.top - 1 <= 0 + offset && rect.bottom >= 0 + offset;
     };
 
     if (typeof setter === "function") {
         useLayoutEffect(() => {
-            window.addEventListener("scroll", () => setScroll(window.scrollY))
+            addEventListener("scroll", () => setScroll(window.scrollY))
         }, []);
 
         useEffect(() => {

@@ -41,7 +41,7 @@ export default ({ data }: PageProps) => {
 
     return (
         <Layout meta={meta}>
-            <Nav />
+            <Nav postArr={[]} hasTicker={false}/>
             <div class={tw`h-[15vh]`} />
             <div class={tw`md:w-3/4 mx-auto`}>
                 <div class={tw`grid grid-cols-12`}>

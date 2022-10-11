@@ -7,8 +7,9 @@ export default () => {
 
     const [content, setContent] = useState<number>(0)
 
-    const handleClick = (e: any) => {
-        setContent(parseInt(e.target.id))
+    const handleClick = (e: Event) => {
+        const target = e.target as HTMLButtonElement
+        setContent(parseInt(target.id))
     }
 
     return (
@@ -21,16 +22,16 @@ export default () => {
                     Specialities
                 </h1>
                 <div class={tw`flex flex-col lg:flex-row my-0`}>
-                    <button onClick={handleClick} id="0" class={tw`outline-none focus:outline-none mx-auto`}>
-                        <h4 id="0" class={tw`text-white w-max text-xl mx-auto`}>Civil Rights</h4>
-                        <img id="0" src="/svg/civ_rights.svg" class={tw`z-40 w-[50vw] lg:w-[10vw] h-auto mx-auto`} />
+                    <button onClick={handleClick} id="0" class={tw`outline-none focus:outline-none mx-auto group`}>
+                        <h4 id="0" class={tw`text-blue-light w-max text-xl mx-auto group-focus:text-white`}>Civil Rights</h4>
+                        <img id="0" src="/svg/civ_rights.svg" class={tw`z-40 w-[50vw] lg:w-[10vw] h-auto mx-auto fill-blue-light stroke-blue-light`} />
                     </button>
-                    <button onClick={handleClick} id="1" class={tw`outline-none focus:outline-none mx-auto`}>
-                        <h4 id="1" class={tw`text-white w-max text-xl mx-auto`}>Personal Injury</h4>
+                    <button onClick={handleClick} id="1" class={tw`outline-none focus:outline-none mx-auto group`}>
+                        <h4 id="1" class={tw`text-blue-light w-max text-xl mx-auto group-focus:text-white`}>Personal Injury</h4>
                         <img id="1" src="/svg/personal_inj.svg" class={tw`z-40 w-[50vw] lg:w-[10vw] h-auto mx-auto`} />
                     </button>
-                    <button onClick={handleClick} id="2" class={tw`outline-none focus:outline-none mx-auto`}>
-                        <h4 id="2" class={tw`text-white w-max text-xl mx-auto`}>Employment</h4>
+                    <button onClick={handleClick} id="2" class={tw`outline-none focus:outline-none mx-auto group`}>
+                        <h4 id="2" class={tw`text-blue-light w-max text-xl mx-auto group-focus:text-white`}>Employment</h4>
                         <img id="2" src="/svg/employ.svg" class={tw`z-40 w-[50vw] lg:w-[10vw] h-auto color-blue-light mx-auto`} />
                     </button>
                 </div>
@@ -71,7 +72,7 @@ export default () => {
                                     Everyone deserves to feel safe at work, regardless of sex, race, age, religion, or gender expression. If you have been the victim of workplace discrimination, this can cause serious stress and harm in your life.
                                 </h1>
                                 <p class={tw`text-md font-light`}>
-                                    Navab Law acknowledges the pernicious effects of workplace discrimination, and we are determined to protect workers at all costs. We assist clients in dealing with a wide range of employment law issues, including discrimination, harassment, wrongful discharge, retaliation, and unfair labor practices. If you believe you are a victim of workplace discrimination, you may be entitled to compensation for your harm.                                </p>
+                                    Navab Law acknowledges the pernicious effects of workplace discrimination, and we are determined to protect workers at all costs. We assist clients in dealing with a wide range of employment law issues, including discrimination, harassment, wrongful discharge, retaliation, and unfair labor practices. If you believe you are a victim of workplace discrimination, you may be entitled to compensation for your harm.</p>
                             </Fragment>
                         ) : null
                     }
