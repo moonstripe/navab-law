@@ -14,9 +14,9 @@ export default ({ values, truncated, components }: PortableTextProps) => {
 
     // 'blocks' store children
 
-    values.forEach(block => {
-        block.children.forEach((child, i) => console.log(block.markDefs.filter(mD => mD._key === child.marks[i])[0]?.href))
-    })
+    // values.forEach(block => {
+    //     block.children.forEach((child, i) => console.log(block.markDefs.filter(mD => mD._key === child.marks[i])[0]?.href))
+    // })
 
     // console.log("specific:", values[values.length - 1])
 
@@ -62,7 +62,6 @@ export default ({ values, truncated, components }: PortableTextProps) => {
                 default:
                     {
                         const href = block.markDefs.filter(mD => mD._key === child.marks[0])[0]?.href;
-                        console.log(href);
                         return (
                             STYLE !== Style.NORMAL ? h(STYLE, { class: tw`inline` }, child.text) : isListItem ? h("li", null, h("a", { target: "_blank", rel: "noopener noreferrer", href: href, class: tw`text-blue-600` }, child.text)) : h("a", { target: "_blank", rel: "noopener noreferrer", href: href, class: tw`text-blue-600` }, child.text)
                         )
@@ -79,7 +78,6 @@ export default ({ values, truncated, components }: PortableTextProps) => {
                     href = block.markDefs.filter(mD => mD._key === child.marks[j])[0]?.href;
                 }
             })
-            console.log(href)
             return (
                 STYLE !== Style.NORMAL ? h(STYLE, { class: tw`inline` }, child.text) : isListItem ? h("li", null, h("a", { target: "_blank", rel: "noopener noreferrer", href: href, class: tw`inline text-blue-600 ${modifiers.includes('em') ? 'italic' : null} ${modifiers.includes('strong') ? 'font-bold' : null}` }, child.text)) : h("a", { target: "_blank", rel: "noopener noreferrer", href: href, class: tw`inline text-blue-600 ${modifiers.includes('em') ? 'italic' : null} ${modifiers.includes('strong') ? 'font-bold' : null}` }, child.text)
             )

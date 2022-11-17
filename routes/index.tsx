@@ -12,7 +12,6 @@ import Contact from "../islands/Contact.tsx";
 import { PageProps, Handlers } from "fresh/server.ts";
 
 import { runQuery } from "../utils/sanity.ts"
-import Ticker from "../islands/Ticker.tsx";
 
 export const handler: Handlers<Post | null> = {
   async GET(_, ctx) {
@@ -61,8 +60,6 @@ export default function Home({data}: PageProps) {
         
       </main>
       {/* Footer */}
-
-      {/* Todo Implement Footer (contact) */}
     </Layout>
   );
 }

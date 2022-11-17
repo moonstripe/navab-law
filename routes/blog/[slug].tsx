@@ -43,7 +43,7 @@ export default ({ data }: PageProps) => {
         <Layout meta={meta}>
             <Nav postArr={[]} hasTicker={false}/>
             <div class={tw`h-[15vh]`} />
-            <div class={tw`md:w-3/4 mx-auto`}>
+            <div class={tw`md:w-11/12 mx-auto`}>
                 <div class={tw`grid grid-cols-12`}>
                     <div class={tw`col-span-2 pt-1`}>
                         <a href={'/blog'}>

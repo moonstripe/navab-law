@@ -66,7 +66,7 @@ const SEO = ({ customMeta }: Meta) => {
 
 export default ({ children, ...customMeta }: LayoutProps) => {
     return (
-        <div class={tw`w-4/6 mx-auto pb-4 max-w-screen-md overscroll-contain`}>
+        <div class={tw`w-4/6 mx-auto pb-4 max-w-screen-md overscroll-contain overscroll-y-none`}>
             <SEO customMeta={customMeta} />
             <main>
                 {children}
