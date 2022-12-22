@@ -28,7 +28,7 @@ export default () => {
                 <p class={tw`mt-0 mb-auto ml-4 lg:ml-0 text-left col-span-full row-start-3 row-end-4 lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:row-end-3 text-2xl font-bold text-white`}>
                     in the pursuit of justice.
                 </p>
-                <p class={tw`text-left col-span-full invisible lg:visible lg:col-start-3 lg:col-end-6 row-start-2 row-start-3 lg:row-start-2 lg:row-end-4 mt-16 mb-auto mx-auto w-full lg:w-2/3 text-md font-light text-white`}>
+                <p class={tw`text-left col-span-full invisible lg:visible lg:col-start-3 lg:col-end-6 row-start-2 row-start-3 lg:row-start-2 lg:row-end-4 mt-12 mx-auto w-full lg:w-2/3 text-md font-light text-white`}>
                     Kaveh Navab founded Navab Law, APC with the goal of bringing justice to individuals affected by discrimination, civil rights violations, and injury from negligence.
                 </p>
                 <div class={tw`col-span-full row-start-3 row-end-4 lg:row-start-4 lg:row-end-5 lg:col-start-3 lg:col-end-6 flex flex-col pt-4`}>
