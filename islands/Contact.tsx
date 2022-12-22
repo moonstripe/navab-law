@@ -44,6 +44,7 @@ export default () => {
 
         if (localStorage.getItem('nl_timeout') && parseInt(new Date().getTime().toString()) <= parseInt(localStorage.getItem('nl_timeout')!)) {
             setError("Please allow at least 24 hours for us to respond before sending us another request.")
+            setSuccess("")
 
             return
         } else if (name.length < 1) {
