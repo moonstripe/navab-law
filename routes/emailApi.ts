@@ -45,7 +45,7 @@ export const handler: Handlers = {
 
     // build content from reason
     let html = `
-        <p>Hello ${cleanName},</p>
+        <p>Hello ${cleanName.split(' ')[0]},</p>
         <p>Thank you for contacting us. If you have potential legal claims, Navab Law, APC would like to have the opportunity to hear more about your case.</p>
         <p>We will get back to you within 3-5 business days to schedule a time to speak with you if we have any follow-up questions. If we don’t have any follow-up questions, you should receive an email or call about our firm’s decision within 3-5 business days.</p>
         <p>Please be aware that sending an email to Navab Law, APC does not contractually obligate our firm to represent you as your attorney. We cannot serve as your counsel in any matter unless you and our firm expressly agree, in writing, that we will serve as your attorney.</p>
@@ -55,7 +55,7 @@ export const handler: Handlers = {
         <p>&nbsp;</p>
         <p>------------------------------</p>
         <p>Your Request:</p>
-        ${reason.split(' ')[0]}
+        ${reason}
         `
 
     // build email message for sendgrid
