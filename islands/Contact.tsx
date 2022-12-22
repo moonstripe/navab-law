@@ -94,15 +94,15 @@ export default () => {
             <h1 class={tw`mt-8 mb-auto font-ultralight text-4xl col-span-4 tracking-wide z-40 `}>
                 Contact Us
             </h1>
-            <div class={tw`col-span-4 h-[50vh] top-[-30vh] lg:top-0 grid grid-cols-4 grid-rows-1 gap-2 text-blue-dark w-full`}>
-                <div class={tw`flex-col col-start-1 col-end-3 row-span-1 z-40`}>
+            <div class={tw`col-span-4 h-[50vh] top-[-30vh] lg:top-0 grid grid-cols-4 grid-rows-2 gap-2 text-blue-dark w-full`}>
+                <div class={tw`flex-col col-span-4 lg:col-start-1 lg:col-end-3 row-start-1 lg:row-span-2 z-40`}>
                     <h1 class={tw`mt-auto mb-2 font-ultralight text-2xl col-span-4 tracking-wide z-40 `}>
                         In person:
                     </h1>
                     <iframe class={tw`z-40 col-span-4 mt-2 mb-0 grow`} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.315569426085!2d-118.4390188847868!3d33.98442728062456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2ba7dcd5f6bd9%3A0x4c30f38188c12288!2sNAVAB%20LAW%2C%20APC!5e0!3m2!1sen!2sus!4v1665506900415!5m2!1sen!2sus" style="border:0;width:100%;height:100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class={tw`flex-col col-start-3 col-end-5 row-start-1 z-40`}>
-                    <h1 class={tw`mt-2 mb-2 font-ultralight text-2xl col-start-3 col-end-5 tracking-wide text-blue-dark`}>
+                <div class={tw`flex-col col-span-4 lg:col-start-3 lg:col-end-5 row-start-2 lg:row-span-2 z-40`}>
+                    <h1 class={tw`mt-12  lg:mt-2 mb-2 font-ultralight text-2xl col-start-3 col-end-5 tracking-wide text-blue-dark`}>
                         By email:
                     </h1>
                     {

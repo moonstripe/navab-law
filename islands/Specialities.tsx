@@ -21,7 +21,7 @@ export default () => {
                 <h1 class={tw`my-8 font-ultralight text-4xl tracking-wide`}>
                     Specialties
                 </h1>
-                <div class={tw`flex flex-row lg:flex-row my-0`}>
+                <div class={tw`flex flex-row my-0 w-full`}>
                     <button onClick={handleClick} id="0" class={tw`outline-none focus:outline-none mx-0 lg:mx-auto`}>
                         <h4 id="0" class={ content === 0 ? tw`text-white w-max text-md mx-2 lg:text-lg lg:mx-auto` : tw`text-blue-light w-max text-md mx-2 lg:text-lg lg:mx-auto`}>Civil Rights</h4>
                         <img id="0" src="/svg/civ_rights.svg" class={tw`z-40 w-[15vw] lg:w-[10vw] h-auto mx-auto fill-blue-light stroke-blue-light`} />
