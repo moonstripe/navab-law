@@ -7,9 +7,9 @@ export const config: Configuration = {
   },
   darkMode: "class",
   theme: {
-    fontFamily: {
-      sans: ["Montserrat"]
-    },
+    // fontFamily: {
+    //   sans: ["Montserrat"]
+    // },
     animation: {
       "down": "down 1s infinite"
     },
