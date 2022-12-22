@@ -33,9 +33,14 @@ export default ({postArr, hasTicker}: NavProps) => {
                                 class={tw`border-transparent border-2 rounded-lg mr-auto lg:visible invisible`}
                             />
                         </a>
-                        <p class={inView === "#about" ? tw`ml-auto my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`ml-auto my-auto px-1 lg:px-6 border-r-1`}><a href="/#about-off">About</a></p>
-                        <p class={inView === "#quickfacts" ? tw`my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`my-auto px-1 lg:px-6 border-r-1`}><a href="/#quickfacts-off">Results</a></p>
-                        <p class={inView === "#specialities" ? tw`my-auto px-1 lg:px-6 text-blue-medium` : tw`my-auto px-1 lg:px-6`}><a href="/#specialities-off">Specialities</a></p>
+                        <div class={tw`flex flex-col lg:flex-row my-auto`}>
+                            <div  class={tw`flex flex-row lg:my-0 mt-0 mb-0.5 `}>
+                                <p class={inView === "#about" ? tw`ml-auto my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`ml-auto my-auto px-1 lg:px-6 border-r-1`}><a href="/#about-off">About</a></p>
+                                <p class={inView === "#quickfacts" ? tw`my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`my-auto px-1 lg:px-6 border-r-1`}><a href="/#quickfacts-off">Results</a></p>
+                                <p class={inView === "#specialities" ? tw`my-auto px-1 lg:px-6 text-blue-medium` : tw`my-auto px-1 lg:px-6`}><a href="/#specialities-off">Specialities</a></p>
+                            </div>
+                        <a href={'tel:+13108261002'} class={tw`text-blue-dark mt-0.5 mb-0 lg:my-0 mx-auto lg:ml-auto lg:mr-0 text-[#f59e0b]`}>(310) 826-1002</a>
+                        </div>
                     </div>
                 </div>
             </div>

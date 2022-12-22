@@ -14,7 +14,7 @@ export default () => {
                         About Navab Law, APC
                     </h1>
                     <p class={tw`my-8`}>
-                        We advocate for victims of civil rights violations, workplace discrimination, and negligence. Since its founding in 2015, Navab Law has striven to hold police officers, corporations and government entities accountable for harm they cause. Our passion for and expertise in civil rights and personal injury have led to many successful verdicts and millions of dollars in compensation to deserving clients.
+                        We advocate for victims of civil rights violations, workplace discrimination, and negligence. Since its founding in 2015, Navab Law has striven to hold corporations and government entities accountable for harm they cause. Our passion for and expertise in civil rights and personal injury have led to many successful verdicts and millions of dollars in compensation to deserving clients.
                     </p>
                     <button class={tw`text-white border-2 border-white mt-8 mb-auto px-4 py-2 rounded-lg lg:group-hover:animate-down animate-none flex col-start-3 col-end-4`}>
                         <a href='/about' class={tw`flex flex-row`}>

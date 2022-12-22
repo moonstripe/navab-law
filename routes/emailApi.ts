@@ -16,6 +16,8 @@ export const handler: Handlers = {
     // pull and clean name, email, reason from body, initialize env variables
     const { name, email, reason } = await req.json();
 
+    // console.log(reason)
+
     let cleanName = '';
 
     for (let i = 0; i < name.split(' ').length; i++) {
@@ -26,12 +28,10 @@ export const handler: Handlers = {
       }
     }
 
-
-    
     let key: string, user: string;
 
-    console.log('hello??')
-    console.log('hello', Deno.env.get('DENO_DEPLOYMENT_ID'))
+    // console.log('hello??')
+    // console.log('hello', Deno.env.get('DENO_DEPLOYMENT_ID'))
 
     if (Deno.env.get('DENO_DEPLOYMENT_ID')) {
       // prod
@@ -43,39 +43,63 @@ export const handler: Handlers = {
       key = config().SG_KEY!;
     }
 
+    // build content from reason
+    let html = `
+        <p>Hello ${cleanName},</p>
+        <p>Thank you for contacting us. If you have potential legal claims, Navab Law, APC would like to have the opportunity to hear more about your case.</p>
+        <p>We will get back to you within 3-5 business days to schedule a time to speak with you if we have any follow-up questions. If we don’t have any follow-up questions, you should receive an email or call about our firm’s decision within 3-5 business days.</p>
+        <p>Please be aware that sending an email to Navab Law, APC does not contractually obligate our firm to represent you as your attorney. We cannot serve as your counsel in any matter unless you and our firm expressly agree, in writing, that we will serve as your attorney.</p>
+        <p>&nbsp;</p>
+        <p>Best,</p>
+        <p>Navab Law, APC</p>
+        <p>&nbsp;</p>
+        <p>------------------------------</p>
+        <p>Your Request:</p>
+        ${reason.split(' ')[0]}
+        `
 
-    // build email template based on reason
+    // build email message for sendgrid
 
     const message = {
       personalizations: [
         {
           from: {
+            // email: 'sofie.navablaw+contact@gmail.com',
             email: 'kojin@moonstripe.com',
-            name: 'Test Navab Law (First FROM)'
+            name: 'Navab Law'
           },
           to: [
             {
               email: email,
               name: cleanName
             }
+          ],
+          cc: [
+            {
+              // email: 'sofie.navablaw+contact@gmail.com',
+              email: 'kojin@moonstripe.com',
+              name: 'Navab Law'
+            }
           ]
         }
       ],
       from: {
+        // email: 'sofie.navablaw+contact@gmail.com',
         email: 'kojin@moonstripe.com',
-        name: 'SECOND FROM'
+        name: 'Navab Law'
       },
       replyTo: {
+        // email: 'sofie.navablaw+contact@gmail.com',
         email: 'kojin@moonstripe.com',
-        name: 'Reply To'
+        name: 'Navab Law'
       },
-      subject: 'Testing Email',
+      subject: 'Regarding your recent inquiry',
 
       // custom content!
       content: [
         {
           type: 'text/html',
-          value: `<p>Hello from the Navab Law Email Service!</p><p>Content written here will be different based on whether the reason selected was generic or, Civil Rights, Employment, or Personal Injury related.</p><p>Sending with the email service trusted by developers and marketers for <strong>time-savings</strong>, <strong>scalability</strong>, and <strong>delivery expertise</strong>.</p>`
+          value: html
         }
       ]
     }

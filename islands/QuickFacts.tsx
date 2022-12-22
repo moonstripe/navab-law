@@ -49,6 +49,8 @@ export default () => {
                 setOffset(curr)
             }
 
+            // document.querySelector("#amount")?.
+
         }, 2500)
 
         return () => clearInterval(interval)
@@ -66,11 +68,11 @@ export default () => {
                 <div class={tw`flex flex-row grid grid-cols-1 lg:grid-cols-3 mt-0 mb-auto text-black z-40`}>
                     <div class={tw`col-span-1 lg:col-span-1 mb-8 mt-auto lg:my-0`}>
                         <h1 class={tw`text-xl`}>Amount</h1>
-                        <p class={tw`transition-opacity mt-2`}>{verdictMap[offset].amount}</p>
+                        <p class={tw`transition-opacity mt-2`} id="amount">{verdictMap[offset].amount}</p>
                     </div>
                     <div class={tw`col-span-1 lg:col-span-2 mt-8 mb-auto lg:my-0`}>
                         <h1 class={tw`text-xl`}>Case</h1>
-                        <p class={tw`transition-opacity mt-2`}>{verdictMap[offset].title}</p>
+                        <p class={tw`transition-opacity mt-2`} id="title">{verdictMap[offset].title}</p>
                     </div>
                 </div>
             </div>

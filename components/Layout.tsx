@@ -18,7 +18,6 @@ const SEO = ({ customMeta }: Meta) => {
     return (
         <Head>
             <title>{meta.title}</title>
-
             {/* Robots.txt */}
             <meta name="robots" content="index, follow" />
 
