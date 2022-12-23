@@ -58,11 +58,11 @@ export default () => {
 
     return (
         <div id="quickfacts" data-scrollspy="#quickfacts" class={tw`grid-cols-2`}>
-            <div class={tw`absolute top-[215vh] lg:top-[115vh] left-0 w-screen bg-white h-[75vh] lg:h-[35vh] z-0`}>
+            <div class={tw`absolute top-[175vh] lg:top-[115vh] left-0 w-screen bg-white h-[75vh] lg:h-[35vh] z-0`}>
                 <div id="quickfacts-off" class={tw`relative top-[-100px]`} />
             </div>
             <div class={tw`flex flex-col h-[75vh] lg:h-[35vh] text-blue-dark mb-1`}>
-                <h1 class={tw`mt-8 mb-auto font-ultralight text-4xl tracking-wide z-40 `}>
+                <h1 class={tw`mt-32 lg:mt-8 mb-auto font-ultralight text-4xl tracking-wide z-40 `}>
                     Results at a Glance
                 </h1>
                 <div class={tw`flex flex-row grid grid-cols-1 lg:grid-cols-3 mt-0 mb-auto text-black z-40`}>

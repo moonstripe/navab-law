@@ -89,10 +89,10 @@ export default () => {
 
     return (
         <div data-scrollspy="#contact" class={tw`grid grid-cols-4 gap-2`}>
-            <div class={tw`absolute lg:top-[250vh] left-0 w-screen bg-white h-[50vh] z-0`}>
+            <div class={tw`absolute top-[350vh] lg:top-[250vh] left-0 w-screen bg-white h-[100vh] lg:h-[50vh] z-0`}>
                 <div id="contact" class={tw`relative top-[-100px]`} />
             </div>
-            <h1 class={tw`mt-8 mb-auto font-ultralight text-4xl col-span-4 tracking-wide z-40 `}>
+            <h1 class={tw`mt-0 lg:mt-8 mb-auto font-ultralight text-4xl col-span-4 tracking-wide z-40 `}>
                 Contact Us
             </h1>
             <div class={tw`col-span-4 h-[50vh] top-[-30vh] lg:top-0 grid grid-cols-4 grid-rows-2 gap-2 text-blue-dark w-full`}>

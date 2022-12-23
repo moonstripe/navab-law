@@ -19,13 +19,13 @@ export default () => {
                     src="/svg/text_white.svg"
                     width="350"
                     alt="Navab Law Text in White"
-                    class={tw`lg:mr-0 lg:mb-[-4vh] lg:ml-16 mt-auto color-white border-transparent border-2 rounded-lg text-center lg:text-right col-span-full row-start-2 row-end-3 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-2 font-semibold text-2xl font-bold lg:text-4xl text-white`}
+                    class={tw`mt-32 lg:mt-auto lg:mr-0 lg:mb-[-4vh] lg:ml-16 color-white border-transparent border-2 rounded-lg text-center lg:text-right col-span-full row-start-2 row-end-3 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-2 font-semibold text-2xl font-bold lg:text-4xl text-white`}
                 />
 
                 {/* <p class={tw`text-center lg:text-right col-span-full row-start-2 row-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:row-end-2 mt-auto mb-0 font-semibold text-2xl font-bold lg:text-4xl text-white`}>
                     Navab Law,
                 </p> */}
-                <p class={tw`mt-0 mb-auto ml-4 lg:ml-0 text-left col-span-full row-start-3 row-end-4 lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:row-end-3 text-2xl font-bold text-white`}>
+                <p class={tw`mt-8 lg:mt-0 mb-auto ml-4 lg:ml-0 text-left col-span-full row-start-3 row-end-4 lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:row-end-3 text-2xl font-bold text-white`}>
                     in the pursuit of justice.
                 </p>
                 <p class={tw`text-left col-span-full invisible lg:visible lg:col-start-3 lg:col-end-6 row-start-2 row-start-3 lg:row-start-2 lg:row-end-4 mt-12 mx-auto w-full lg:w-2/3 text-md font-light text-white`}>
@@ -33,8 +33,8 @@ export default () => {
                 </p>
                 <div class={tw`col-span-full row-start-3 row-end-4 lg:row-start-4 lg:row-end-5 lg:col-start-3 lg:col-end-6 flex flex-col pt-4`}>
                     <div class={tw`flex flex-row mb-0 mt-auto`}>
-                        <button class={tw`bg-white ml-auto mr-2 my-auto px-4 py-2 rounded-lg lg:group-hover:animate-down animate-none flex`}>
-                            <a href='/#about-off' class={tw`flex flex-row`}>
+                        <button class={tw`bg-white ml-auto mr-2 my-auto px-4 py-2 h-full rounded-lg lg:group-hover:animate-down animate-none flex grow`}>
+                            <a href='/#about-off' class={tw`flex flex-row my-auto`}>
                                 <img
                                     class={tw`m-auto pr-0.5 align-middle`}
                                     src="/svg/down.svg"
