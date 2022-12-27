@@ -82,7 +82,7 @@ export const handler: Handlers = {
         }
       ],
       from: {
-        email: 'kojinglick@gmail.com',
+        email: 'navab+kojin@moonstripe.com',
         name: 'Navab Law'
       },
       replyTo: {
