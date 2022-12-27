@@ -40,7 +40,7 @@ export default ({ data }: PageProps) => {
         <Layout meta={meta}>
             <Nav postArr={[]} hasTicker={false}/>
             <div class={tw`h-[15vh]`} />
-            <div class={tw`md:w-3/4 mx-auto`}>
+            <div class={tw`lg:w-5/6 mx-auto`}>
                 {
                     data.map((e: Post, i: number) => (
                         <div class={tw`mb-4`}>

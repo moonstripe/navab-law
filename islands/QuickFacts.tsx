@@ -74,7 +74,9 @@ export default () => {
                         <h1 class={tw`text-xl`}>Case</h1>
                         <p class={tw`transition-opacity mt-2`} id="title">{verdictMap[offset].title}</p>
                     </div>
+                    <p class={tw`invisible lg:visible lg:mt-8`}>Read more on <a class={tw`text-blue-light`} href={'/blog'}>our blog</a>!</p>
                 </div>
+            
             </div>
 
         </div>

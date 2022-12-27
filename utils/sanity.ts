@@ -1,5 +1,7 @@
 // routes/api/sanity.ts
 
+import { config } from "dotenv";
+
 type SanityClientOptions = {
     projectId: string;
     dataset: string;
@@ -10,9 +12,22 @@ type SanityClientOptions = {
 
 type QueryParameters = Record<string, string | number>;
 
+let sanity_project_id: string;
+let sanity_dataset: string;
+
+if (Deno.env.get('DENO_DEPLOYMENT_ID')) {
+    // prod
+    sanity_project_id = Deno.env.get('SANITY_PROJECT_ID')!;
+    sanity_dataset = Deno.env.get('SANITY_DATASET')!;
+  } else {
+    // dev
+    sanity_project_id = config().SANITY_PROJECT_ID!;
+    sanity_dataset = config().SANITY_DATASET!;
+  }
+
 const sanityCredentials = {
-    projectId: "yci58bp3",
-    dataset: "production",
+    projectId: sanity_project_id,
+    dataset: sanity_dataset,
 };
 
 const sanityClient = (options: SanityClientOptions) => {

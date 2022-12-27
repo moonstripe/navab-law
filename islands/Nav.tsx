@@ -35,9 +35,9 @@ export default ({postArr, hasTicker}: NavProps) => {
                         </a>
                         <div class={tw`flex flex-col lg:flex-row my-auto`}>
                             <div  class={tw`flex flex-row lg:my-0 mt-0 mb-0.5 `}>
-                                <p class={inView === "#about" ? tw`ml-auto my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`ml-auto my-auto px-1 lg:px-6 border-r-1`}><a href="/#about-off">About</a></p>
-                                <p class={inView === "#quickfacts" ? tw`my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`my-auto px-1 lg:px-6 border-r-1`}><a href="/#quickfacts-off">Results</a></p>
-                                <p class={inView === "#specialities" ? tw`my-auto px-1 lg:px-6 text-blue-medium` : tw`my-auto px-1 lg:px-6`}><a href="/#specialities-off">Specialities</a></p>
+                                <p class={inView === "#about" ? tw`ml-auto my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`ml-auto my-auto px-1 lg:px-6 border-r-1`}><a href="/about">About</a></p>
+                                <p class={inView === "#quickfacts" ? tw`my-auto px-1 lg:px-6 text-blue-medium border-r-1` : tw`my-auto px-1 lg:px-6 border-r-1`}><a href="/blog">Blog</a></p>
+                                <p class={inView === "#specialities" ? tw`my-auto px-1 lg:px-6 text-blue-medium` : tw`my-auto px-1 lg:px-6`}><a href="/specialties">Specialties</a></p>
                             </div>
                         <a href={'tel:+13108261002'} class={tw`text-blue-dark mt-0.5 mb-0 lg:my-0 mx-auto lg:ml-auto lg:mr-0 text-[#f59e0b]`}>(310) 826-1002</a>
                         </div>

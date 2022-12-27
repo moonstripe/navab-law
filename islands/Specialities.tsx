@@ -42,8 +42,8 @@ export default () => {
                                 <h1 class={tw`text-lg my-4 tracking-wide text-md lg:text-bold`}>
                                     At Navab Law, we take pride in our efforts to defend individual rights and liberties. <b>The Fourth Amendment of the Constitution protects individuals from “unreasonable searches and seizures,” which means government officials cannot arbitrarily or unreasonably search you or your belongings, nor falsely arrest you, nor use excessive force against you.</b>
                                 </h1>
-                                <p class={tw`text-sm lg:text-md lg:font-light`}>
-                                    Navab Law is committed to achieving justice for families and individuals affected by civil rights violations, negligence of police officers, violence and death, particularly as a result of police brutality. If you believe you are a victim of civil rights violations, you may be entitled to compensation for your harm.
+                                <p class={tw`text-md lg:text-md lg:font-light`}>
+                                    Navab Law is committed to achieving justice for families and individuals affected by civil rights violations, negligence of police officers, violence and death, particularly as a result of police brutality. <a class={tw`text-blue-200`} href="/specialties#civil_rights">If you believe you are a victim of civil rights violations</a>, you may be entitled to compensation for your harm.
                                 </p>
                             </Fragment>
                         ) : null
@@ -56,7 +56,7 @@ export default () => {
                                     When a person is seriously injured due to the negligence and carelessness of others, it can drastically change and devastate many lives. Through tireless and dedicated litigation, we aim to restore some dignity and stability to all those affected.
                                 </h1>
                                 <p class={tw`text-md font-light`}>
-                                    Our firm has the experience to successfully litigate claims for victims of negligence. We have handled a myriad of personal injury issues, including automobile accidents, catastrophic injury, premises liability and wrongful death. If you believe you are a victim of serious injury due to negligence, you may be entitled to compensation for your harm.
+                                    Our firm has the experience to successfully litigate claims for victims of negligence. We have handled a myriad of personal injury issues, including automobile accidents, catastrophic injury, premises liability and wrongful death. <a class={tw`text-blue-200`} href="/specialties#personal_injury">If you believe you are a victim of serious injury due to negligence</a>, you may be entitled to compensation for your harm.
                                 </p>
                             </Fragment>
                         ) : null
@@ -68,7 +68,7 @@ export default () => {
                                     Everyone deserves to feel safe at work, regardless of sex, race, age, religion, or gender expression. If you have been the victim of workplace discrimination, this can cause serious stress and harm in your life.
                                 </h1>
                                 <p class={tw`text-md font-light`}>
-                                    Navab Law acknowledges the pernicious effects of workplace discrimination, and we are determined to protect workers at all costs. We assist clients in dealing with a wide range of employment law issues, including discrimination, harassment, wrongful discharge, retaliation, and unfair labor practices. If you believe you are a victim of workplace discrimination, you may be entitled to compensation for your harm.
+                                    Navab Law acknowledges the pernicious effects of workplace discrimination, and we are determined to protect workers at all costs. We assist clients in dealing with a wide range of employment law issues, including discrimination, harassment, wrongful discharge, retaliation, and unfair labor practices. <a class={tw`text-blue-200`} href="/specialties#employment">If you believe you are a victim of workplace discrimination</a>, you may be entitled to compensation for your harm.
                                 </p>
                             </Fragment>
                         ) : null
