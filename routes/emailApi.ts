@@ -64,7 +64,7 @@ export const handler: Handlers = {
       personalizations: [
         {
           from: {
-            email: 'kojinglick@gmail.com',
+            email: 'sofie@navablaw.com',
             name: 'Navab Law'
           },
           to: [
@@ -82,7 +82,7 @@ export const handler: Handlers = {
         }
       ],
       from: {
-        email: 'navab+kojin@moonstripe.com',
+        email: 'sofie@navablaw.com',
         name: 'Navab Law'
       },
       replyTo: {
