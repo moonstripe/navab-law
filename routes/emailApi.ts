@@ -64,7 +64,7 @@ export const handler: Handlers = {
       personalizations: [
         {
           from: {
-            email: 'kojin+contact@moonstripe.com',
+            email: 'kojinglick@gmail.com',
             name: 'Navab Law'
           },
           to: [
@@ -75,18 +75,18 @@ export const handler: Handlers = {
           ],
           cc: [
             {
-              email: 'kojin+contact@moonstripe.com',
+              email: 'kojinglick@gmail.com',
               name: 'Navab Law'
             }
           ]
         }
       ],
       from: {
-        email: 'kojin+contact@moonstripe.com',
+        email: 'kojinglick@gmail.com',
         name: 'Navab Law'
       },
       replyTo: {
-        email: 'kojin+contact@moonstripe.com',
+        email: 'kojinglick@gmail.com',
         name: 'Navab Law'
       },
       subject: 'Regarding your recent inquiry',
