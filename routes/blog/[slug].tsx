@@ -41,28 +41,25 @@ export default ({ data }: PageProps) => {
 
     return (
         <Layout meta={meta}>
-            <Nav postArr={[]} hasTicker={false}/>
+            <Nav postArr={[]} hasTicker={false} />
             <div class={tw`h-[15vh]`} />
-            <div class={tw`md:w-11/12 mx-auto`}>
-                <div class={tw`grid grid-cols-12`}>
-                    <div class={tw`col-span-2 pt-1`}>
-                        <a href={'/blog'}>
-                            <button class={tw`text-white border-2 border-white ml-auto mr-2 my-auto px-2 py-1 rounded-lg flex bg-blue-dark`}>
-                                <img
-                                    class={tw`m-auto pr-0.5 align-middle rotate-90`}
-                                    src="/svg/down.svg"
-                                    width="24"
-                                    alt="two down-facing chevrons" />
-                                <p class={tw`m-auto pr-0.5 align-middle`}>Blog</p>
-                            </button>
-                        </a>
-                    </div>
-                    <div class={tw`col-span-10`}>
-                        <h1 class={tw`text-4xl mb-1`}>{post.title}</h1>
-                        <p class={tw`mb-4 inline`}>{post.authorName} <p class={tw`font-light inline`}>- {new Date(post.publishedAt).toLocaleDateString()}</p></p>
-                        <img src={post.image} class={tw`my-2 rounded-md`} />
+            <div class='w-screen'>
+                <div class={tw`my-8 w-5/6 lg:w-1/2 mx-auto`}>
+                    <div class={tw`grid grid-cols-12`}>
+                        <div class={tw`col-span-2 pt-1`}>
+                            <a href={'/blog'}>
+                                <button class={tw`text-white border-2 border-white ml-auto mr-2 my-auto px-2 py-1 rounded-lg flex bg-blue-dark`}>
+                                    <p class={tw`m-auto pr-0.5 align-middle`}>Blog</p>
+                                </button>
+                            </a>
+                        </div>
+                        <div class={tw`col-span-10`}>
+                            <h1 class={tw`text-4xl mb-1`}>{post.title}</h1>
+                            <p class={tw`mb-4 inline`}>{post.authorName} <p class={tw`font-light inline`}>- {new Date(post.publishedAt).toLocaleDateString()}</p></p>
+                            <img src={post.image} class={tw`my-2 rounded-md`} />
 
-                        <BlockContent truncated={false} values={post.body} />
+                            <BlockContent truncated={false} values={post.body} />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -38,24 +38,30 @@ export default ({ data }: PageProps) => {
 
     return (
         <Layout meta={meta}>
-            <Nav postArr={[]} hasTicker={false}/>
+            <Nav postArr={[]} hasTicker={false} />
             <div class={tw`h-[15vh]`} />
-            <div class={tw`lg:w-5/6 mx-auto`}>
-                {
-                    data.map((e: Post, i: number) => (
-                        <div class={tw`mb-4`}>
-                            <div class={tw`flex flex-row`}>
-                                <h1 class={tw`font-bold`}>{e.title}</h1>
-                                &nbsp;
-                                <p>-</p>
-                                &nbsp;
-                                <h4>{new Date(e.publishedAt).toLocaleDateString()}</h4>
+            <div class='w-screen'>
+                <div class={tw`my-8 w-5/6 lg:w-1/2 mx-auto`}>
+                    <h1 class={tw`text-4xl text-blue-medium`}>
+                        Blog
+                    </h1>
+                    <div class={tw`h-[0.5vh] bg-blue-dark mt-4 mb-4`} />
+                    {
+                        data.map((e: Post, i: number) => (
+                            <div class={tw`mb-4`}>
+                                <div class={tw`flex flex-row`}>
+                                    <h1 class={tw`font-bold`}>{e.title}</h1>
+                                    &nbsp;
+                                    <p>-</p>
+                                    &nbsp;
+                                    <h4>{new Date(e.publishedAt).toLocaleDateString()}</h4>
+                                </div>
+                                <BlockContent values={e.body} truncated />
+                                <a href={`/blog/${e.slug}`} class={tw`text-blue-medium inline`}>Read more</a>
                             </div>
-                            <BlockContent values={e.body} truncated />
-                            <a href={`/blog/${e.slug}`} class={tw`text-blue-medium inline`}>Read more.</a>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
+                </div>
             </div>
         </Layout >
     );
