@@ -13,12 +13,12 @@ export default () => {
     }
 
     return (
-        <div id="specialities" data-scrollspy="#specialities" class={tw`text-white`}>
-            <div class={tw`absolute top-[250vh] lg:top-[150vh] left-0 w-screen bg-blue-dark h-[250vh] lg:h-[75vh] -z-10`}>
+        <div id="specialities" data-scrollspy="#specialities" class={tw`text-white w-5/6 lg:w-2/3 mx-auto pb-8 h-[800px] lg:h-auto`}>
+            <div class={tw`lg:absolute lg:top-[150vh] left-0 w-screen bg-blue-dark h-0 lg:h-[70vh] -z-10`}>
                 <div id="specialities-off" class={tw`relative top-[-100px]`} />
             </div>
-            <div class={tw`h-[115vh] lg:h-[75vh] z-40 stroke-white flex flex-col`}>
-                <h1 class={tw`mt-32 mb-8 lg:my-8 font-ultralight text-4xl tracking-wide`}>
+            <div class={tw`h-[115vh] lg:h-[70vh] z-40 stroke-white flex flex-col`}>
+                <h1 class={tw`mt-8 lg:mt-0 mb-8 lg:mb-8 font-ultralight text-4xl tracking-wide`}>
                     Specialties
                 </h1>
                 <div class={tw`flex flex-row my-0 w-full`}>

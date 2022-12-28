@@ -6,9 +6,9 @@ import { tw } from "twind"
 export default () => {
 
     return (
-        <div id="hero" data-scrollspy="#hero" class={tw`grid grid-cols-5 group`}>
-            <div class={tw`absolute top-[15vh] mt-1 left-0 w-screen bg-gradient-to-b from-blue-medium via-blue-medium via-blue-medium to-blue-dark h-[100vh] lg:h-[50vh] z-0`} />
-            <div class={tw`col-span-full h-[100vh] lg:h-[50vh] grid grid-cols-5 grid-rows-4 lg:grid-rows-6 lg:grid-rows-3 pt-12 gap-0 z-10`}>
+        <div id="hero" data-scrollspy="#hero" class={tw`grid grid-cols-5 group w-5/6 lg:w-2/3 mx-auto flex h-[800px] lg:h-auto`}>
+            <div class={tw`relative lg:absolute lg:top-[15vh] mt-1 left-0 w-screen bg-gradient-to-b from-blue-medium via-blue-medium via-blue-medium to-blue-dark h-0 lg:h-[50vh] z-0`} />
+            <div class={tw`col-span-full lg:h-[50vh] grid grid-cols-5 grid-rows-4 lg:grid-rows-4 lg:grid-rows-3 pt-12 gap-0 z-10 h-[800px]`}>
 
                 <img
                     class={tw`mb-0 mt-8 border-8 rounded-full col-span-full row-start-1 row-end-2 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-4 w-auto justify-end`}
@@ -19,13 +19,13 @@ export default () => {
                     src="/svg/text_white.svg"
                     width="350"
                     alt="Navab Law Text in White"
-                    class={tw`mt-32 lg:mt-auto lg:mr-0 lg:mb-[-4vh] lg:ml-16 color-white border-transparent border-2 rounded-lg text-center lg:text-right col-span-full row-start-2 row-end-3 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-2 font-semibold text-2xl font-bold lg:text-4xl text-white`}
+                    class={tw`mt-0 mb-auto mx-auto lg:mt-auto lg:mr-0 lg:mb-[-4vh] lg:ml-16 color-white border-transparent border-2 rounded-lg lg:text-right col-span-full row-start-3 row-end-4 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-2 font-semibold text-2xl font-bold lg:text-4xl text-white`}
                 />
 
                 {/* <p class={tw`text-center lg:text-right col-span-full row-start-2 row-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:row-end-2 mt-auto mb-0 font-semibold text-2xl font-bold lg:text-4xl text-white`}>
                     Navab Law,
                 </p> */}
-                <p class={tw`mt-8 lg:mt-0 mb-auto ml-4 lg:ml-0 text-left col-span-full row-start-3 row-end-4 lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:row-end-3 text-2xl font-bold text-white`}>
+                <p class={tw`mt-24 lg:mt-0 mb-auto text-right lg:text-left lg:ml-0 col-span-full row-start-3 row-end-4 lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:row-end-3 text-2xl font-bold text-white`}>
                     in the pursuit of justice.
                 </p>
                 <p class={tw`text-left col-span-full invisible lg:visible lg:col-start-3 lg:col-end-6 row-start-2 row-start-3 lg:row-start-2 lg:row-end-4 mt-12 mx-auto w-full lg:w-2/3 text-md font-light text-white`}>

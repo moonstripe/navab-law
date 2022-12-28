@@ -15,7 +15,7 @@ import { runQuery } from "../utils/sanity.ts"
 
 export const handler: Handlers<Post | null> = {
   async GET(_, ctx) {
-      const raw = await runQuery(`
+    const raw = await runQuery(`
       *[_type == "post"] | order(publishedAt desc) {
         title,
         body,
@@ -24,11 +24,11 @@ export const handler: Handlers<Post | null> = {
       }
       `);
 
-      return ctx.render(raw);
+    return ctx.render(raw);
   },
 };
 
-export default function Home({data}: PageProps) {
+export default function Home({ data }: PageProps) {
   const meta: Meta = {
     title: "Navab Law",
     type: "website",
@@ -38,28 +38,38 @@ export default function Home({data}: PageProps) {
   return (
     <Layout meta={meta}>
       {/* ScrollSpy and Nav */}
-     <Nav postArr={data} hasTicker/>
-     <div class={tw`h-[15vh] mb-1`}/>
+      <Nav postArr={data} hasTicker />
+      <div class={tw`h-[15vh] mb-1`} />
 
       {/* Main content */}
-      <main id="content">
+      <div class="w-screen">
         {/* Hero image and text */}
-        <Hero/>
+        <div class="lg:bg-none bg-gradient-to-b from-blue-medium via-blue-medium via-blue-medium to-blue-dark">
+          <Hero />
+        </div>
 
         {/* About Navab */}
-        <About/>
+        <div class="lg:bg-none bg-blue-dark">
+          <About />
+        </div>
 
         {/* Quick Facts */}
-        <QuickFacts/>
+        <div class="lg:bg-none bg-none">
+          <QuickFacts />
+        </div>
 
         {/* Specialities */}
-        <Specialities/>
+        <div class="lg:none bg-blue-dark">
+          <Specialities />
+        </div>
 
         {/* Contact */}
-        <Contact/>
-        
-      </main>
-      {/* Footer */}
+        <div class="lg:none bg-none">
+          <Contact />
+        </div>
+
+        {/* Footer */}
+      </div>
     </Layout>
   );
 }
