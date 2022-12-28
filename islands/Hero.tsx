@@ -31,8 +31,8 @@ export default () => {
                 <p class={tw`text-left col-span-full invisible lg:visible lg:col-start-3 lg:col-end-6 row-start-2 row-start-3 lg:row-start-2 lg:row-end-4 mt-12 mx-auto w-full lg:w-2/3 text-md font-light text-white`}>
                     Kaveh Navab founded Navab Law, APC with the goal of bringing justice to individuals affected by discrimination, civil rights violations, and injury from negligence.
                 </p>
-                <div class={tw`col-span-full row-start-3 row-end-4 lg:row-start-4 lg:row-end-5 lg:col-start-3 lg:col-end-6 flex flex-col pt-4`}>
-                    <div class={tw`flex flex-row mb-0 mt-auto`}>
+                <div class={tw`col-span-full row-start-4 row-end-5 lg:row-start-4 lg:row-end-5 lg:col-start-3 lg:col-end-6 flex flex-col pt-4`}>
+                    <div class={tw`flex flex-row mb-auto mt-0`}>
                         <button class={tw`bg-white ml-auto mr-2 my-auto px-4 py-2 h-full rounded-lg lg:group-hover:animate-down animate-none flex grow`}>
                             <a href='/#about-off' class={tw`flex flex-row my-auto`}>
                                 <img
