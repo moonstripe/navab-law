@@ -64,8 +64,8 @@ export const handler: Handlers = {
       personalizations: [
         {
           from: {
-            email: 'contact@navablaw.com',
-            name: 'Navab Law'
+            email: 'kaveh@navablaw.com',
+            name: 'Kaveh Navab, APC'
           },
           to: [
             {
@@ -77,17 +77,21 @@ export const handler: Handlers = {
             {
               email: 'contact@navablaw.com',
               name: 'Navab Law'
+            },
+            {
+              email: 'kaveh@navablaw.com',
+              name: 'Kaveh Navab, APC'
             }
           ]
         }
       ],
       from: {
-        email: 'contact@navablaw.com',
-        name: 'Navab Law'
+        email: 'kaveh@navablaw.com',
+        name: 'Kaveh Navab, APC'
       },
       replyTo: {
-        email: 'contact@navablaw.com',
-        name: 'Navab Law'
+        email: 'kaveh@navablaw.com',
+        name: 'Kaveh Navab, APC'
       },
       subject: 'Regarding your recent inquiry',
 
