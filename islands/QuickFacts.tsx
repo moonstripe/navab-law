@@ -67,12 +67,12 @@ export default () => {
                 </h1>
                 <div class={tw`flex flex-row grid grid-cols-1 lg:grid-cols-3 mt-2 mb-0 text-black z-40 shrink`}>
                     <div class={tw`col-span-1 lg:col-span-1 mb-4 mt-auto lg:my-0`}>
-                        <h1 class={tw`text-2xl font-extrabold`}>Amount</h1>
-                        <p class={tw`transition-opacity mt-2 font-bold`} id="amount">{verdictMap[offset].amount}</p>
+                        <h1 class={tw`text-lg font-bold`}>Amount</h1>
+                        <p class={tw`transition-opacity mt-2 font-extrabold text-2xl text-blue-medium`} id="amount">{verdictMap[offset].amount}</p>
                     </div>
                     <div class={tw`col-span-1 lg:col-span-2 mt-4 mb-auto lg:my-0`}>
-                        <h1 class={tw`text-2xl font-extrabold`}>Case</h1>
-                        <p class={tw`transition-opacity mt-2 font-bold`} id="title">{verdictMap[offset].title}</p>
+                        <h1 class={tw`text-lg font-bold`}>Case</h1>
+                        <p class={tw`transition-opacity mt-2 font-bold text-xl text-blue-dark`} id="title">{verdictMap[offset].title}</p>
                     </div>
                     <p class={tw`mt-4 lg:mt-8`}>Read more on <a class={tw`text-blue-light`} href={'/blog'}>our blog</a>!</p>
                 </div>
