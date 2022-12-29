@@ -27,10 +27,10 @@ export default ({ setter }: ScrollSpyProps) => {
                     (entries) => {
                         entries.forEach((entry) => {
                             if (isInViewPort(entry)) {
-                                console.log(entry)
+                                // console.log(entry)
                                 const active = `#${entry.target.id}`;
 
-                                console.log(active)
+                                // console.log(active)
                                 document.querySelector(`#${entry.target.id}-nav`)?.classList.add('text-red-400');
                                 document.querySelector(`#${entry.target.id}-nav`)?.classList.add('my-4');
                                 setter(active);
