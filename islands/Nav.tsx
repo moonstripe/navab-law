@@ -41,8 +41,8 @@ export default ({ postArr, hasTicker }: NavProps) => {
                                     <p class={inView === "#specialities" ? tw`my-auto px-3 lg:px-9 text-blue-medium` : tw`my-auto px-3 lg:px-9`}><a href="/specialties">Specialties</a></p>
                                 </div>
                                 <div class={tw`flex flex-col lg:ml-auto lg:mr-0 my-auto`}>
-                                    <a href={'tel:+13108261002'} class={tw`text-center text-[#f59e0b] text-sm`}>(310) 826-1002</a>
-                                    <a href={'https://www.google.com/maps/place/NAVAB+LAW,+APC/@33.9844273,-118.4390189,17z/data=!3m2!4b1!5s0x80c2ba760ff213a5:0x726e415956a54b58!4m5!3m4!1s0x80c2ba7dcd5f6bd9:0x4c30f38188c12288!8m2!3d33.9844273!4d-118.4368302'}>
+                                    <a href={'tel:+13108261002'} class={tw`text-center text-[#b45309] text-sm lg:font-bold`}>(310) 826-1002</a>
+                                    <a href={'https://www.google.com/maps/place/NAVAB+LAW,+APC/@33.9844273,-118.4390189,17z/data=!3m2!4b1!5s0x80c2ba760ff213a5:0x726e415956a54b58!4m5!3m4!1s0x80c2ba7dcd5f6bd9:0x4c30f38188c12288!8m2!3d33.9844273!4d-118.4368302'} class={tw`lg:font-bold`}>
                                         <p class={tw`text-blue-medium text-center text-sm`}>{'13160 Mindanao Way Ste. 280'}</p>
                                         <p class={tw`text-blue-medium text-center text-sm`}>{'Marina Del Rey, CA 90292'}</p>
                                     </a>
